@@ -1,3 +1,17 @@
+source /opt/homebrew/opt/antidote/share/antidote/antidote.zsh
+
+antidote load
+
+bindkey "^[[A" history-substring-search-up
+bindkey "^[[B" history-substring-search-down
+
+export TYPEWRITTEN_CURSOR="terminal"
+export TYPEWRITTEN_SYMBOL="$"
+
+autoload -U promptinit && promptinit && prompt typewritten
+
+export CLICOLOR=1
+
 alias g="git"
 alias ga="git add"
 alias gc="git commit"
