@@ -1,0 +1,15 @@
+[commit]
+verbose = true
+
+[core]
+editor = code --wait
+
+[diff]
+algorithm = histogram
+colorMoved = default
+
+[merge]
+conflictStyle = zdiff3
+
+[push]
+autoSetupRemote = true
